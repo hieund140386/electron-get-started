@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <section>
+      <h3>Hello ElectronJS</h3>
+      <p>
+        Version of NodeJS is:
+        <span id="node-vers"></span>
+      </p>
+      <p>
+        Version of Chrome is:
+        <span id="chrome-vers"></span>
+      </p>
+      <p>
+        Version of Electron is:
+        <span id="electron-vers"></span>
+      </p>
+    </section>
+    <button id="ping">Ping</button>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
